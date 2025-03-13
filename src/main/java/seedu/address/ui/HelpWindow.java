@@ -1,5 +1,7 @@
 package seedu.address.ui;
 
+import java.awt.Desktop;
+import java.io.File;
 import java.util.logging.Logger;
 
 import javafx.fxml.FXML;
@@ -15,7 +17,7 @@ import seedu.address.commons.core.LogsCenter;
  */
 public class HelpWindow extends UiPart<Stage> {
 
-    public static final String USERGUIDE_URL = "https://se-education.org/addressbook-level3/UserGuide.html";
+    public static final String USERGUIDE_URL = "helpguide.html";
     public static final String HELP_MESSAGE = "Refer to the user guide: " + USERGUIDE_URL;
 
     private static final Logger logger = LogsCenter.getLogger(HelpWindow.class);
@@ -64,6 +66,13 @@ public class HelpWindow extends UiPart<Stage> {
      */
     public void show() {
         logger.fine("Showing help page about the application.");
+        String htmlFilePath = getClass().getClassLoader().getResource("docs/helpguide.html").getPath();
+        File htmlFile = new File(htmlFilePath);
+        try {
+            Desktop.getDesktop().browse(htmlFile.toURI());
+        } catch (Exception e) {
+            System.err.println("Error opening HTML file: " + e.getMessage());
+        }
         getRoot().show();
         getRoot().centerOnScreen();
     }
