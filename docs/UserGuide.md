@@ -20,7 +20,7 @@ Whether you need to track employee milestones, update records, or generate quick
 🧠 CLI-first so power users get things done quickly.<br>
 🎯 Never miss an anniversary, birthday, or detail again.<br>
 
-## 📚 What You’ll Find in This Guide
+<h2 id="what-youll-find-in-this-guide">📚 What You'll Find in This Guide</h2>
 
 1. [Quick Start](#quick-start)
 2. [Features](#features)
@@ -748,6 +748,6 @@ Action | Format, Examples
 **export** | `export ft/json fp/data/ fn/contacts`<br> e.g., `export ft/json fp/data/ fn/contacts`
 
 ---
-## Glossary
+## Glossary [top](#what-youll-find-in-this-guide)
 * CLI (Command Line Interface): A text-based interface used to type commands
 * GUI (Graphical User Interface): A user interface that allows interaction with the software through visual elements like buttons and icons.
