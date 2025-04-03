@@ -20,7 +20,7 @@ Whether you need to track employee milestones, update records, or generate quick
 🧠 CLI-first so power users get things done quickly.<br>
 🎯 Never miss an anniversary, birthday, or detail again.<br>
 
-## 📚 What You’ll Find in This Guide
+<h2 id="toc">📚 What You’ll Find in This Guide</h2>
 
 1. [Quick Start](#quick-start)
 2. [Features](#features)
@@ -146,6 +146,8 @@ All commands are **Case sensitive** and must be entered exactly as shown.
 
 ---
 ## Core Commands
+
+[⬆️ Back to Top](#toc)
 
 ---
 ### Viewing help: `help`
@@ -296,6 +298,8 @@ With just a few commands, you can:
 - Remove outdated or incorrect entries
 ---
 ## Anniversary Commands
+
+[⬆️ Back to Top](#toc)
 
 ---
 
@@ -452,6 +456,9 @@ this will delete the anniversary at index 1 of the employee with the Employee ID
 
 ---
 ## Reminder Commands
+
+[⬆️ Back to Top](#toc)
+
 ---
 
 ### Viewing upcoming birthdays: `reminder bd`
@@ -720,6 +727,8 @@ Whether you're setting up H'Reers on a new machine or wondering why the help win
 **Q**: How do I transfer my data to another Computer?<br>
 **A**: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous H'Reers home folder.<br>
 
+[⬆️ Back to Top](#toc)
+
 --------------------------------------------------------------------------------------------------------------------
 
 ## Known issues
@@ -748,6 +757,8 @@ Action | Format, Examples
 **export** | `export ft/json fp/data/ fn/contacts`<br> e.g., `export ft/json fp/data/ fn/contacts`
 
 ---
-## Glossary
+<h2>Glossary </h2>
 * CLI (Command Line Interface): A text-based interface used to type commands
 * GUI (Graphical User Interface): A user interface that allows interaction with the software through visual elements like buttons and icons.
+
+[⬆️ Back to Top](#toc)
