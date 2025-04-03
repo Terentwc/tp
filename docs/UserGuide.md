@@ -189,6 +189,8 @@ Shows a list of all employees in H'Reers.
 
 Format: `list`
 
+[⬆️ Back to Top](#toc)
+
 ---
 ### Editing an employee: `edit`
 
@@ -209,6 +211,8 @@ Examples:
 *  `edit 2dsf n/Betsy Crower t/` Edits the name of the specified employee to be `Betsy Crower` and clears all existing tags.
 *  `edit 1sdg21 eid/3b9417cc-cf4e-4231-bc4d-4fd167c2abc6` Edits the employee id to be now `3b9417cc-cf4e-4231-bc4d-4fd167c2abc6` so long as no such employee id already exists.
 
+[⬆️ Back to Top](#toc)
+
 ---
 ### Undoing the last command: `undo`
 
@@ -225,6 +229,8 @@ Format: `undo`
 Examples:
 * `undo` Will return the previous changed saved data.
 * `undo 2` Will still return to the previous changed saved data as `undo` ignores all parameters after it.
+
+[⬆️ Back to Top](#toc)
 
 ---
 ### Locating employees: `find`
@@ -272,6 +278,8 @@ Examples:
 
 ![result for 'find n/li ri jp/ dev manager'](images/FindLiRiDevManagerResult.png)
 
+[⬆️ Back to Top](#toc)
+
 ---
 ### Deleting an employee: `delete`
 
@@ -285,6 +293,8 @@ Format: `delete Employee_ID_prefix`
 Examples:
 * `list` followed by `delete Employee_ID_prefix` deletes the specified employee.
 
+[⬆️ Back to Top](#toc)
+
 ---
 # Anniversary Commands
 Great HR isn’t just about managing people — it’s about remembering what matters.
@@ -296,10 +306,11 @@ With just a few commands, you can:
 - View Anniversaries related to a specific employee
 - View all upcoming anniversaries (Minseok go add this)
 - Remove outdated or incorrect entries
----
-## Anniversary Commands
 
 [⬆️ Back to Top](#toc)
+
+---
+## Anniversary Commands
 
 ---
 
@@ -391,6 +402,8 @@ If exactly one employee’s ID starts with `0c2414da`, this will create a `work 
 | `wa/`      | A short name for the work anniversary                     | Optional                          | `Work Anniversary`     |
 | `n/`       | Name of the person required for birthday/work anniversary | Optional(required for bd/wa only) | `Alex shenanigans`     |
 
+[⬆️ Back to Top](#toc)
+
 ---
 ### Showing anniversaries: `showAnni`
 
@@ -410,6 +423,8 @@ The Employee ID is the unique identifier assigned to each employee in H'Reers �
 
 Examples:
 * showAnni eid/e22e5292-0353-49a9-9281-5a76e53bc94f
+
+[⬆️ Back to Top](#toc)
 
 ---
 ### Deleting Anniversaries: `deleteAnni`
@@ -453,14 +468,12 @@ this will delete the anniversary at index 1 of the employee with the Employee ID
 | `eid/`     | A partial (or full) prefix of the Employee ID                | Required      | `0c2414da`  |
 | `ai/`      | The 1-based index of the anniversary you wish to remove      | Required      | `1`         |
 
+[⬆️ Back to Top](#toc)
 
 ---
 ## Reminder Commands
 
-[⬆️ Back to Top](#toc)
-
 ---
-
 ### Viewing upcoming birthdays: `reminder bd`
 
 Filters and displays a list of employees whose birthdays are occurring within the next 3 days.
@@ -477,6 +490,8 @@ Filters and displays a list of employees whose birthdays are occurring within th
     - **Days remaining** until the birthday
 
 > 💡 The command only affects display; no data is modified.
+
+[⬆️ Back to Top](#toc)
 
 ---
 
@@ -502,6 +517,9 @@ Below is an example of how the reminders appear on the UI:
 ![reminderListUI.png](images/remindersListUI.png)
 
 The reminders appear on the panel when you type in `reminder`.
+
+[⬆️ Back to Top](#toc)
+
 ---
 ## Quality of Life Features
 
@@ -522,6 +540,8 @@ Format: `exit`
 ---
 ## Data Management
 
+[⬆️ Back to Top](#toc)
+
 ---
 ### Saving the data
 
@@ -536,6 +556,8 @@ H'Reers data are saved automatically as a JSON file `[JAR file location]/data/H'
 If your changes to the data file makes its format invalid, H'Reers will discard all data and start with an empty data file at the next run. Hence, it is recommended to take a backup of the file before editing it.<br>
 Furthermore, certain edits can cause the H'Reers to behave in unexpected ways (e.g., if a value entered is outside of the acceptable range). Therefore, edit the data file only if you are confident that you can update it correctly.
 </div>
+
+[⬆️ Back to Top](#toc)
 
 ---
 ### Importing data: `import`
@@ -630,6 +652,8 @@ this will import the file `contacts.csv` from `/data` directory and append the d
 - **Use Overwrite Cautiously**: This mode replaces all current data, so confirm backups if needed.
 </details>
 
+[⬆️ Back to Top](#toc)
+
 ---
 ### Exporting data: `export`
 saves the currently visible list of people in the Hreers application to a file (JSON or CSV).
@@ -709,6 +733,7 @@ As a convenience, on the in-app output, it will show how many employees have bee
 | `fp/`      | The optional file path (directory or full path) | Optional if `fn/` is used | `./output/`           |
 | `fn/`      | The optional filename (extension auto-added)    | Optional if `fp/` is used | `contacts`, `data.csv`|
 
+[⬆️ Back to Top](#toc)
 
 ---
 ## Archiving data files `[coming in v2.0]`
