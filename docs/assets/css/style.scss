@@ -10,3 +10,22 @@
     height: 21px;
     width: 21px
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: none;
+}
+
+/* Show the button(backtotop) when scrolling down */
+window.onscroll = function() {
+  const button = document.querySelector('.back-to-top');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+button.style.display = "block";
+} else {
+    button.style.display = "none";
+  }
+};
+
