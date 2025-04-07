@@ -6,3 +6,8 @@ document.addEventListener('scroll', function() {
         backToTopButton.classList.remove('show');
     }
 });
+
+document.querySelector('.back-to-top').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
