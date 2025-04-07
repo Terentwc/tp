@@ -157,6 +157,8 @@ Shows a message explaining how to access the help page.
 
 Format: `help`
 
+{% include back-to-top.html %}
+
 ---
 ### Adding an employee: `add`
 
