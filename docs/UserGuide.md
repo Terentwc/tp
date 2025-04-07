@@ -55,8 +55,6 @@ Whether you need to track employee milestones, update records, or generate quick
 
 ## Quick start
 
-{% include back_to_top.html %}
-
 1. Make sure Java is installed
 
    H'Reers runs on Java, a safe and widely-used technology.You need Java version 17.
